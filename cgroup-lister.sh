@@ -1,13 +1,12 @@
 #!/bin/sh
-for p in $(find /sys/fs/cgroup/ -name cgroup.procs ); do
-	d="$(dirname $p)"
+for d in $(find /sys/fs/cgroup/ -type d | sort); do
 	echo $d
 	echo "controllers:"
 	cat "$d/cgroup.controllers"
 	echo "subtree_control:"
 	cat "$d/cgroup.subtree_control"
 	echo "pids:"
-	for pid in $(cat $p); do
+	for pid in $(cat $d/cgroup.procs); do
 		echo "  $pid: $(cat /proc/$pid/comm)"
     done
 done
