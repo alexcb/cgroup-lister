@@ -1,0 +1,1353 @@
+/sys/fs/cgroup
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+  2: kthreadd
+  3: rcu_gp
+  4: rcu_par_gp
+  5: slub_flushwq
+  6: netns
+  8: kworker/0:0H-events_highpri
+  10: mm_percpu_wq
+  11: rcu_tasks_kthread
+  12: rcu_tasks_rude_kthread
+  13: rcu_tasks_trace_kthread
+  14: ksoftirqd/0
+  15: rcu_preempt
+  16: migration/0
+  17: idle_inject/0
+  19: cpuhp/0
+  20: cpuhp/1
+  21: idle_inject/1
+  22: migration/1
+  23: ksoftirqd/1
+  25: kworker/1:0H-events_highpri
+  26: cpuhp/2
+  27: idle_inject/2
+  28: migration/2
+  29: ksoftirqd/2
+  31: kworker/2:0H-events_highpri
+  32: cpuhp/3
+  33: idle_inject/3
+  34: migration/3
+  35: ksoftirqd/3
+  37: kworker/3:0H-events_highpri
+  38: cpuhp/4
+  39: idle_inject/4
+  40: migration/4
+  41: ksoftirqd/4
+  43: kworker/4:0H-events_highpri
+  44: cpuhp/5
+  45: idle_inject/5
+  46: migration/5
+  47: ksoftirqd/5
+  49: kworker/5:0H-events_highpri
+  50: cpuhp/6
+  51: idle_inject/6
+  52: migration/6
+  53: ksoftirqd/6
+  55: kworker/6:0H-events_highpri
+  56: cpuhp/7
+  57: idle_inject/7
+  58: migration/7
+  59: ksoftirqd/7
+  61: kworker/7:0H-events_highpri
+  62: cpuhp/8
+  63: idle_inject/8
+  64: migration/8
+  65: ksoftirqd/8
+  67: kworker/8:0H-events_highpri
+  68: cpuhp/9
+  69: idle_inject/9
+  70: migration/9
+  71: ksoftirqd/9
+  73: kworker/9:0H-events_highpri
+  74: cpuhp/10
+  75: idle_inject/10
+  76: migration/10
+  77: ksoftirqd/10
+  79: kworker/10:0H-events_highpri
+  80: cpuhp/11
+  81: idle_inject/11
+  82: migration/11
+  83: ksoftirqd/11
+  85: kworker/11:0H-events_highpri
+  86: cpuhp/12
+  87: idle_inject/12
+  88: migration/12
+  89: ksoftirqd/12
+  91: kworker/12:0H-events_highpri
+  92: cpuhp/13
+  93: idle_inject/13
+  94: migration/13
+  95: ksoftirqd/13
+  97: kworker/13:0H-events_highpri
+  98: cpuhp/14
+  99: idle_inject/14
+  100: migration/14
+  101: ksoftirqd/14
+  103: kworker/14:0H-events_highpri
+  104: cpuhp/15
+  105: idle_inject/15
+  106: migration/15
+  107: ksoftirqd/15
+  109: kworker/15:0H-events_highpri
+  110: kdevtmpfs
+  111: inet_frag_wq
+  112: kauditd
+  113: khungtaskd
+  114: oom_reaper
+  116: writeback
+  117: kcompactd0
+  118: ksmd
+  120: khugepaged
+  121: kintegrityd
+  122: kblockd
+  123: blkcg_punt_bio
+  124: tpm_dev_wq
+  125: ata_sff
+  126: md
+  127: edac-poller
+  128: devfreq_wq
+  129: watchdogd
+  131: kworker/0:1H-kblockd
+  132: kswapd0
+  133: ecryptfs-kthread
+  134: kthrotld
+  135: irq/123-pciehp
+  136: irq/128-pciehp
+  137: acpi_thermal_pm
+  138: xenbus_probe
+  142: hwrng
+  144: mld
+  145: ipv6_addrconf
+  154: kstrp
+  166: zswap-shrink
+  171: charger_manager
+  194: kworker/13:1H-kblockd
+  198: kworker/9:1H-kblockd
+  217: kworker/2:1H-kblockd
+  218: kworker/1:1H-kblockd
+  219: kworker/10:1H-kblockd
+  220: kworker/6:1H-kblockd
+  221: kworker/7:1H-kblockd
+  222: kworker/15:1H-kblockd
+  223: kworker/11:1H-kblockd
+  224: kworker/5:1H-kblockd
+  225: kworker/3:1H-kblockd
+  226: kworker/4:1H-kblockd
+  227: kworker/8:1H-kblockd
+  228: kworker/12:1H-kblockd
+  234: kworker/14:1H-kblockd
+  261: scsi_eh_0
+  262: scsi_tmf_0
+  265: nvme-wq
+  266: nvme-reset-wq
+  267: nvme-delete-wq
+  268: nvme-auth-wq
+  269: irq/31-PNP0C50:00
+  272: cryptd
+  280: card0-crtc0
+  281: card0-crtc1
+  282: card0-crtc2
+  477: kdmflush/253:0
+  482: kcryptd_io/253:
+  483: kcryptd/253:0
+  484: dmcrypt_write/253:0
+  489: kdmflush/253:1
+  490: kdmflush/253:2
+  537: jbd2/dm-1-8
+  538: ext4-rsv-conver
+  823: cfg80211
+  849: irq/171-iwlwifi:default_queue
+  850: irq/172-iwlwifi:queue_1
+  851: irq/173-iwlwifi:queue_2
+  852: irq/174-iwlwifi:queue_3
+  853: irq/175-iwlwifi:queue_4
+  854: irq/176-iwlwifi:queue_5
+  855: irq/177-iwlwifi:queue_6
+  856: irq/178-iwlwifi:queue_7
+  857: irq/179-iwlwifi:queue_8
+  858: irq/180-iwlwifi:queue_9
+  859: irq/181-iwlwifi:queue_10
+  860: irq/182-iwlwifi:queue_11
+  861: irq/183-iwlwifi:queue_12
+  862: irq/184-iwlwifi:queue_13
+  863: irq/185-iwlwifi:queue_14
+  864: irq/186-iwlwifi:exception
+  873: kworker/u33:1-i915_flip
+  874: kworker/u33:2-hci0
+  875: nv_queue
+  876: nv_queue
+  880: nvidia-modeset/kthread_q
+  881: nvidia-modeset/deferred_close_kthread_q
+  887: irq/188-nvidia
+  888: nvidia
+  889: nv_queue
+  912: jbd2/nvme0n1p2-8
+  913: ext4-rsv-conver
+  1349: UVM global queue
+  1350: UVM deferred release queue
+  1351: UVM Tools Event Queue
+  1746: krfcommd
+  6723: bpfilter_umh
+  1025392: kworker/3:1-events
+  1039198: kworker/6:1-events
+  1043421: kworker/8:1-kdmflush/253:1
+  1044039: kworker/u32:16-flush-253:1
+  1051175: kworker/u32:0-kcryptd/253:0
+  1051481: kworker/4:3-events
+  1060402: kworker/15:1-events
+  1062388: kworker/u32:9-kcryptd/253:0
+  1063160: kworker/6:2-events
+  1064238: kworker/1:1-events
+  1064498: kworker/u32:14-kcryptd/253:0
+  1065223: kworker/u32:3-kcryptd/253:0
+  1065225: kworker/u32:8-kcryptd/253:0
+  1065779: kworker/13:0-events
+  1067111: kworker/9:2-cgroup_destroy
+  1067577: kworker/u32:2-kcryptd/253:0
+  1068196: kworker/u32:4-kcryptd/253:0
+  1068494: kworker/7:0-events
+  1069501: kworker/u32:5-kcryptd/253:0
+  1069743: kworker/12:1-events
+  1069908: kworker/u32:12-kcryptd/253:0
+  1070932: kworker/2:2-events
+  1071667: kworker/5:0-events
+  1072336: kworker/u32:1-kcryptd/253:0
+  1072353: kworker/u32:6-events_unbound
+  1072367: kworker/7:1-cgroup_destroy
+  1072373: kworker/u32:7-events_unbound
+  1073140: kworker/u32:11-kcryptd/253:0
+  1073194: kworker/2:1-cgroup_destroy
+  1073307: kworker/9:1-events
+  1073898: kworker/10:2-events
+  1073905: kworker/u32:13-kcryptd/253:0
+  1073906: kworker/u32:17-kcryptd/253:0
+  1073978: kworker/0:1-events
+  1075422: kworker/14:3-events
+  1075602: kworker/1:3-kdmflush/253:1
+  1080246: kworker/12:0-cgroup_destroy
+  1080259: kworker/13:1-events
+  1080367: kworker/3:2-cgroup_destroy
+  1080390: kworker/11:1-mm_percpu_wq
+  1080436: kworker/11:3-events
+  1080630: kworker/10:0-events
+  1080705: kworker/8:2-events
+  1081769: kworker/4:1-events
+  1081852: kworker/0:0-cgroup_destroy
+  1081918: kworker/14:1-cgroup_destroy
+  1081944: kworker/5:1-events
+  1082051: kworker/15:0-events
+  1083216: kworker/u32:18-kcryptd/253:0
+  1091582: kworker/14:0
+  1091588: kworker/2:0
+  1093931: kworker/11:0
+  1095562: kworker/10:1
+  1096770: kworker/0:2
+/sys/fs/cgroup/sys-fs-fuse-connections.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/sys-kernel-config.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/sys-kernel-debug.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/dev-mqueue.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/buildkit
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+/sys/fs/cgroup/user.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpu memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice
+controllers:
+cpu memory pids
+subtree_control:
+cpu memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service
+controllers:
+cpu memory pids
+subtree_control:
+cpu memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-goa-volume-monitor.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2893: gvfs-goa-volume
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice
+controllers:
+cpu memory pids
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3429: gsd-media-keys
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Smartcard.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3447: gsd-smartcard
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/xdg-permission-store.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2835: xdg-permission-
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Datetime.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3421: gsd-datetime
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2831: xdg-document-po
+  2842: fusermount3
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Housekeeping.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3424: gsd-housekeepin
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3281: gnome-shell
+  3306: mutter-x11-fram
+  1080550: gjs
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/xdg-desktop-portal.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3125: xdg-desktop-por
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.freedesktop.IBus.session.GNOME.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3413: sh
+  3416: ibus-daemon
+  3546: ibus-memconf
+  3548: ibus-extension-
+  3551: ibus-x11
+  3584: ibus-engine-sim
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/pipewire-pulse.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2783: pipewire-pulse
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Keyboard.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3427: gsd-keyboard
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.A11ySettings.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3414: gsd-a11y-settin
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/wireplumber.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2773: wireplumber
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Wacom.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3453: gsd-wacom
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-daemon.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2802: gvfsd
+  2810: gvfsd-fuse
+  3389: gvfsd-trash
+  4163: gvfsd-http
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-udisks2-volume-monitor.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2871: gvfs-udisks2-vo
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Sharing.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3442: gsd-sharing
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Color.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3417: gsd-color
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.ScreensaverProxy.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3441: gsd-screensaver
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.PrintNotifications.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3437: gsd-print-notif
+  3598: gsd-printer
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Power.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3431: gsd-power
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.XSettings.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3457: gsd-xsettings
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-gphoto2-volume-monitor.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2882: gvfs-gphoto2-vo
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/at-spi-dbus-bus.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3211: at-spi-bus-laun
+  3218: dbus-daemon
+  3225: at-spi2-registr
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-metadata.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3700: gvfsd-metadata
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Sound.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3452: gsd-sound
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/pipewire.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2768: pipewire
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/dbus.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2784: dbus-daemon
+  2898: goa-daemon
+  2906: goa-identity-se
+  3328: gnome-shell-cal
+  3354: gjs
+  3554: ibus-portal
+  3596: gjs
+  3807: gnome-calendar
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.Rfkill.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3439: gsd-rfkill
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-mtp-volume-monitor.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2877: gvfs-mtp-volume
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/gvfs-afc-volume-monitor.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2887: gvfs-afc-volume
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/background.slice
+controllers:
+cpu memory pids
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/background.slice/tracker-miner-fs-3.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2854: tracker-miner-f
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice
+controllers:
+cpu memory pids
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-org.gnome.Evolution\x2dalarm\x2dnotify-3500.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  3500: evolution-alarm
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-snap\x2duserd\x2dautostart-3487.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/evolution-calendar-factory.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3346: evolution-calen
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/xdg-desktop-portal-gnome.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3152: xdg-desktop-por
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/dconf.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3472: dconf-service
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/gnome-keyring-daemon.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  2791: gnome-keyring-d
+  5570: ssh-agent
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\x2dsession\x2dmanager.slice
+controllers:
+memory pids
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\x2dsession\x2dmanager.slice/gnome-session-manager@ubuntu.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3262: gnome-session-b
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/gcr-ssh-agent.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3249: gcr-ssh-agent
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/dbus.socket
+controllers:
+memory pids
+subtree_control:
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/evolution-source-registry.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3335: evolution-sourc
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-update\x2dnotifier-4357.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  4357: update-notifier
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/snap.snapd-desktop-integration.snapd-desktop-integration.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3012: snapd-desktop-i
+  3101: snapd-desktop-i
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/ssh-agent.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3252: ssh-agent
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice
+controllers:
+memory pids
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-d0cc2578-b6ed-4ef0-ae34-01dd06d77e75.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  5531: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-8ab7963c-39b3-4d7e-af49-a09bb1a98517.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  1010735: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-bf19a4d1-d84d-43f6-b7dc-ade9afbc4965.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  5615: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-5a280b03-84da-470a-9e13-b0db8fd14afe.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  318591: bash
+  753849: nvim-qt
+  753858: nvim
+  1097323: earthly
+  1097629: docker
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-cd07f59b-757f-4d48-b9f1-09f30506c4d3.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  534765: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-a0c5588f-8744-425e-ba28-10db9aa9c6b3.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  302333: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-d67bb276-aa6e-4c5e-8342-218b02c9cee8.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  746860: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-ebb15f4f-1fbf-4543-a1f3-706fcb89a6e9.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  1094051: bash
+  1097830: sudo
+  1097831: sudo
+  1097832: cgroup-lister.s
+  1098428: 
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/gnome-terminal-server.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  5355: gnome-terminal-
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-81524424-1b72-4854-bc03-d77eb0e13c8c.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  553601: bash
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/gpg-agent.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3903: gpg-agent
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-3499.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  3499: gsd-disk-utilit
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/gnome-session-monitor.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3250: gnome-session-c
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/xdg-desktop-portal-gtk.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3210: xdg-desktop-por
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-slack-3946.scope
+controllers:
+memory pids
+subtree_control:
+pids:
+  3946: slack
+  3949: slack
+  3950: slack
+  3952: slack
+  3969: chrome_crashpad
+  3983: slack
+  3988: slack
+  4021: slack
+  4033: slack
+  4170: chrome
+  4175: cat
+  4176: cat
+  4178: chrome_crashpad
+  4180: chrome_crashpad
+  4186: chrome
+  4187: chrome
+  4188: nacl_helper
+  4191: chrome
+  4213: chrome
+  4217: chrome
+  4228: chrome
+  4245: chrome
+  4246: chrome
+  4288: chrome
+  4764: slack
+  89998: chrome
+  298316: chrome
+  301863: chrome
+  337768: chrome
+  337779: chrome
+  343483: chrome
+  343628: chrome
+  343658: chrome
+  343744: chrome
+  343784: chrome
+  343792: chrome
+  343803: chrome
+  362858: chrome
+  362878: chrome
+  391960: chrome
+  398029: chrome
+  398053: chrome
+  523061: chrome
+  523892: chrome
+  524413: chrome
+  532149: chrome
+  542368: chrome
+  542404: chrome
+  544360: chrome
+  585545: chrome
+  613528: chrome
+  614457: chrome
+  723989: chrome
+  724902: chrome
+  735534: chrome
+  735643: chrome
+  735694: chrome
+  735899: chrome
+  736154: chrome
+  737328: chrome
+  739455: chrome
+  741337: chrome
+  741534: chrome
+  746988: chrome
+  753367: chrome
+  753384: chrome
+  756450: chrome
+  756652: chrome
+  797804: chrome
+  822780: chrome
+  990037: chrome
+  990831: chrome
+  990874: chrome
+  1009357: chrome
+  1014851: chrome
+  1015125: chrome
+  1021056: chrome
+  1051606: chrome
+  1052297: chrome
+  1053595: chrome
+  1093869: chrome
+  1093893: chrome
+  1093905: chrome
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/evolution-addressbook-factory.service
+controllers:
+memory pids
+subtree_control:
+pids:
+  3360: evolution-addre
+/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/init.scope
+controllers:
+cpu memory pids
+subtree_control:
+pids:
+  2761: systemd
+  2762: (sd-pam)
+/sys/fs/cgroup/user.slice/user-1000.slice/session-2.scope
+controllers:
+cpu memory pids
+subtree_control:
+pids:
+  2728: gdm-session-wor
+  2934: gdm-x-session
+  2936: Xorg
+  3112: gnome-session-b
+/sys/fs/cgroup/sys-kernel-tracing.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/init.scope
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1: systemd
+/sys/fs/cgroup/system.slice/irqbalance.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1045: irqbalance
+/sys/fs/cgroup/system.slice/snap-yq-2219.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/system-systemd\x2dfsck.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/system.slice/bolt.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1175: boltd
+/sys/fs/cgroup/system.slice/snap-krita-90.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+/sys/fs/cgroup/system.slice/snap-bare-5.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/launcher.kolide-k2.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1303: launcher
+  1841: osqueryd
+/sys/fs/cgroup/system.slice/run-qemu.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/containerd.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1282: containerd
+  1055228: containerd-shim
+  1076217: containerd-shim
+/sys/fs/cgroup/system.slice/systemd-udevd.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/systemd-udevd.service/udev
+controllers:
+subtree_control:
+pids:
+  628: systemd-udevd
+/sys/fs/cgroup/system.slice/dev-mapper-vgubuntu\x2dswap_1.swap
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-snapd-19361.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/cron.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1038: cron
+/sys/fs/cgroup/system.slice/system-systemd\x2dcryptsetup.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/system.slice/boot.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/thermald.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1106: thermald
+/sys/fs/cgroup/system.slice/ssh.socket
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-gnome\x2d42\x2d2204-111.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/docker.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  2216: dockerd
+  1055215: docker-proxy
+  1076204: docker-proxy
+/sys/fs/cgroup/system.slice/polkit.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1049: polkitd
+/sys/fs/cgroup/system.slice/snap-core22-817.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-kf5\x2d5\x2d104\x2dqt\x2d5\x2d15\x2d8\x2dcore22-9.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/rtkit-daemon.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1499: rtkit-daemon
+/sys/fs/cgroup/system.slice/snap-gtk\x2dcommon\x2dthemes-1535.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/bluetooth.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1037: bluetoothd
+/sys/fs/cgroup/system.slice/accounts-daemon.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1029: accounts-daemon
+/sys/fs/cgroup/system.slice/snap-snapd\x2ddesktop\x2dintegration-57.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-snapd-19457.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/wpa_supplicant.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1149: wpa_supplicant
+/sys/fs/cgroup/system.slice/system-modprobe.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/system.slice/snap-snapd\x2ddesktop\x2dintegration-83.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/ModemManager.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1172: ModemManager
+/sys/fs/cgroup/system.slice/systemd-journald.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  593: systemd-journal
+/sys/fs/cgroup/system.slice/snap-krita-85.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/system-systemd\x2dbacklight.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/system.slice/power-profiles-daemon.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1051: power-profiles-
+/sys/fs/cgroup/system.slice/unattended-upgrades.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1277: unattended-upgr
+/sys/fs/cgroup/system.slice/fwupd.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  469697: fwupd
+/sys/fs/cgroup/system.slice/colord.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  2298: colord
+/sys/fs/cgroup/system.slice/snap-firefox-2916.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-core20-1950.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-yq-2194.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/NetworkManager.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1147: NetworkManager
+/sys/fs/cgroup/system.slice/nvidia-persistenced.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1365: nvidia-persiste
+/sys/fs/cgroup/system.slice/snapd.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1066: snapd
+/sys/fs/cgroup/system.slice/gdm.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1383: gdm3
+/sys/fs/cgroup/system.slice/switcheroo-control.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1074: switcheroo-cont
+/sys/fs/cgroup/system.slice/system76power.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1081: system76-power
+/sys/fs/cgroup/system.slice/rsyslog.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1298: rsyslogd
+/sys/fs/cgroup/system.slice/snap-core18-2751.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/boot-efi.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-kf5\x2d5\x2d104\x2dqt\x2d5\x2d15\x2d8\x2dcore22-7.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/kerneloops.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  2223: kerneloops
+  2226: kerneloops
+/sys/fs/cgroup/system.slice/snap-core20-1974.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/docker-29c93196f4d182b599cf642edff4929cd1a6398417d8f4fdb859e4caa12bcaf4.scope
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+/sys/fs/cgroup/system.slice/docker-29c93196f4d182b599cf642edff4929cd1a6398417d8f4fdb859e4caa12bcaf4.scope/earthly
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1055247: entrypoint.sh
+  1055299: buildkitd
+/sys/fs/cgroup/system.slice/docker-29c93196f4d182b599cf642edff4929cd1a6398417d8f4fdb859e4caa12bcaf4.scope/buildkit
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+/sys/fs/cgroup/system.slice/docker-29c93196f4d182b599cf642edff4929cd1a6398417d8f4fdb859e4caa12bcaf4.scope/init
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-snap\x2dstore-638.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-gnome\x2d3\x2d38\x2d2004-143.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snapd.socket
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/docker-1b55d376dbdf03afca7272c7d9436c2e2c50d8406ec4a67e17457013925b2f01.scope
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+/sys/fs/cgroup/system.slice/docker-1b55d376dbdf03afca7272c7d9436c2e2c50d8406ec4a67e17457013925b2f01.scope/earthly
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1076240: entrypoint.sh
+  1076293: buildkitd
+  1097648: buildctl
+  1097768: buildkit-runc
+/sys/fs/cgroup/system.slice/docker-1b55d376dbdf03afca7272c7d9436c2e2c50d8406ec4a67e17457013925b2f01.scope/buildkit
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+cpuset cpu io memory hugetlb pids rdma misc
+pids:
+/sys/fs/cgroup/system.slice/docker-1b55d376dbdf03afca7272c7d9436c2e2c50d8406ec4a67e17457013925b2f01.scope/buildkit/m76scur1yykkgukki7kpluel6
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1097780: earth_debugger
+  1097790: sh
+  1097791: sh
+  1097792: tee
+  1097793: earthly-entrypo
+/sys/fs/cgroup/system.slice/docker-1b55d376dbdf03afca7272c7d9436c2e2c50d8406ec4a67e17457013925b2f01.scope/init
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-kde\x2dframeworks\x2d5\x2d96\x2dqt\x2d5\x2d15\x2d5\x2dcore20-7.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/cups-browsed.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  908755: cups-browsed
+/sys/fs/cgroup/system.slice/snap-snap\x2dstore-959.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/docker.socket
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/cups.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  908750: cupsd
+/sys/fs/cgroup/system.slice/upower.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1644: upowerd
+/sys/fs/cgroup/system.slice/systemd-oomd.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  983: systemd-oomd
+/sys/fs/cgroup/system.slice/systemd-resolved.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  984: systemd-resolve
+/sys/fs/cgroup/system.slice/snap-core18-2785.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-core22-806.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-gnome\x2d3\x2d38\x2d2004-140.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/udisks2.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1108: udisksd
+/sys/fs/cgroup/system.slice/tailscaled.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1709: tailscaled
+/sys/fs/cgroup/system.slice/dbus.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1039: dbus-daemon
+/sys/fs/cgroup/system.slice/systemd-timesyncd.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  985: systemd-timesyn
+/sys/fs/cgroup/system.slice/system-getty.slice
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+memory pids
+pids:
+/sys/fs/cgroup/system.slice/snap-firefox-2908.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/snap-gnome\x2d42\x2d2204-120.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/system.slice/avahi-daemon.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1036: avahi-daemon
+  1119: avahi-daemon
+/sys/fs/cgroup/system.slice/systemd-logind.service
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+  1102: systemd-logind
+/sys/fs/cgroup/system.slice/var-snap-firefox-common-host\x2dhunspell.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/proc-sys-fs-binfmt_misc.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
+/sys/fs/cgroup/dev-hugepages.mount
+controllers:
+cpuset cpu io memory hugetlb pids rdma misc
+subtree_control:
+pids:
